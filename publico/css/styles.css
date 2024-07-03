@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(https://static.zerochan.net/Makima.full.4020225.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 20px;
+}
+input {
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+button {
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+h2 {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-animation: text;
+    background-clip: text;
+    animation: rainbow 5s linear infinite;
+}
+@keyframes rainbow {
+    to {
+        background-position: 200% center;
+    }
+}
